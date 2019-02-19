@@ -57,11 +57,25 @@
       background: url("../img/profile.jpeg");
       border-radius: 50%;
       border: solid 3px #0060ff; }
-    .menu-branding .nav-item {
-      transform: translate3d(600px, 0, 0);
-      transition: all 0.5s ease-out; }
-      .menu-branding .nav-item.show {
-        transform: translate3d(0, 0, 0); }
+  .menu .nav-item {
+    transform: translate3d(600px, 0, 0);
+    transition: all 0.5s ease-out; }
+    .menu .nav-item.show {
+      transform: translate3d(0, 0, 0); }
+    .menu .nav-item.current > a {
+      color: #0060ff; }
+  .menu .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: set-text-color(#444);
+    text-decoration: none;
+    transition: all 0.5s ease-out; }
+    .menu .nav-link:hover {
+      color: #0060ff; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
